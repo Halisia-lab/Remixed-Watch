@@ -24,9 +24,9 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
   mod
 )), __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: !0 }), mod);
 
-// css-bundle-update-plugin-ns:/Users/halisia/Documents/GE/template-ts/node_modules/@remix-run/css-bundle/dist/index.js
+// css-bundle-update-plugin-ns:/Users/halisia/Documents/GE/RemixedWatch/node_modules/@remix-run/css-bundle/dist/index.js
 var require_dist = __commonJS({
-  "css-bundle-update-plugin-ns:/Users/halisia/Documents/GE/template-ts/node_modules/@remix-run/css-bundle/dist/index.js"(exports) {
+  "css-bundle-update-plugin-ns:/Users/halisia/Documents/GE/RemixedWatch/node_modules/@remix-run/css-bundle/dist/index.js"(exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: !0 });
     var cssBundleHref2;
@@ -380,18 +380,18 @@ var import_react3 = require("react"), import_jsx_dev_runtime5 = require("react/j
       },
       this
     ),
-    isOpened ? /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("ul", { className: "menu", children: [...Array(20)].map(
-      (x, i) => /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("li", { className: "border-b py-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("button", { onClick: () => onChooseTimeZone(i), children: [
-        "GMT+",
-        i
+    isOpened ? /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("ul", { className: "menu", children: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map(
+      (x, i) => /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("li", { className: "border-b py-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("button", { onClick: () => onChooseTimeZone(x), children: [
+        "GMT ",
+        x > 0 ? `+${x}` : x
       ] }, void 0, !0, {
         fileName: "app/components/watch/TimeZonesList.tsx",
         lineNumber: 32,
-        columnNumber: 59
+        columnNumber: 55
       }, this) }, i, !1, {
         fileName: "app/components/watch/TimeZonesList.tsx",
         lineNumber: 32,
-        columnNumber: 21
+        columnNumber: 17
       }, this)
     ) }, void 0, !1, {
       fileName: "app/components/watch/TimeZonesList.tsx",
@@ -781,8 +781,8 @@ var import_jsx_dev_runtime13 = require("react/jsx-dev-runtime"), Watch = ({ time
             columnNumber: 17
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)("span", { className: "absolute top-16 text-black text-xs", children: [
-            "GMT+ ",
-            timeZone
+            "GMT ",
+            timeZone >= 0 ? `+${timeZone}` : `${timeZone}`
           ] }, void 0, !0, {
             fileName: "app/components/watch/Watch.tsx",
             lineNumber: 175,
@@ -956,7 +956,7 @@ function Index() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-FOEXDIWK.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-RBT6HMUR.js", "/build/_shared/chunk-IDVHFTXG.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-CETR76FU.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-S6SCH643.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "e383b42f", hmr: { runtime: "/build/_shared/chunk-IDVHFTXG.js", timestamp: 1724064065262 }, url: "/build/manifest-E383B42F.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-EK4ZBNPQ.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-5ZLGJ2ZF.js", "/build/_shared/chunk-PMU7QF3Q.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-SB3FCICH.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-6HO5GXUA.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "58936714", hmr: { runtime: "/build/_shared/chunk-PMU7QF3Q.js", timestamp: 1724336697151 }, url: "/build/manifest-58936714.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

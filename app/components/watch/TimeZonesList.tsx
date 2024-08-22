@@ -28,10 +28,10 @@ export const TimeZonesList = ({ onChooseTimeZone }: TimeZonesListProps) => {
         </button>
         {isOpened ? (
             <ul className="menu">
-                {[...Array(20)].map((x, i) =>
-                    <li className="border-b py-2" key={i}><button onClick={() => onChooseTimeZone(i)}>GMT+{i}</button></li>
-                )}
-            </ul>
+            {[-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, +1, +2, +3, +4, +5, +6, +7, +8, +9, +10, +11, +12].map((x, i) =>
+                <li className="border-b py-2" key={i}><button onClick={() => onChooseTimeZone(x)}>GMT {x > 0 ? `+${x}` : x}</button></li>
+            )}
+        </ul>
         ) : null}
     </div>
 }

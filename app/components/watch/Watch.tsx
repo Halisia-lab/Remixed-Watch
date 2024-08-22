@@ -172,7 +172,7 @@ export const Watch = ({ timeZone }: WatchProps) => {
             <div style={{ left: `${position.x}rem`, top: `${position.y}rem`, transform: `matrix(${animationMatrix.cells[0][0]}, ${animationMatrix.cells[0][1]}, ${animationMatrix.cells[1][0]}, ${animationMatrix.cells[1][1]}, ${origin.x}, ${origin.y})` }}
                 className={`relative h-56 w-56 flex justify-center place-items-center `}>
                 <img src={watchImage} className="absolute h-full w-full" />
-                <span className="absolute top-16 text-black text-xs">GMT+ {timeZone}</span>
+                <span className="absolute top-16 text-black text-xs">GMT {timeZone >= 0 ? `+${timeZone}` : `${timeZone}`}</span>
 
                 {/* Buttons */}
                 <WatchButton className="top-16 right-0 h-6 w-10 " label={"MODE"} onPress={() => changeMode()} />
